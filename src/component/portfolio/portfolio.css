@@ -1,0 +1,93 @@
+.portfolio__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.portfolio__items {
+  background: var(--color-bg-variant);
+  padding: 1.3rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+.portfolio__items:hover {
+  border-color: var(--color-primary-variant);
+  background: transparent;
+  
+}
+
+.portfolio__items__image {
+  height: 300px;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+.portfolio__items h3 {
+  margin: 1.2rem 0 2rem;
+}
+
+.portfolio__item__cta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* ================media queries ( Medium device) ======================= */
+
+@media screen and (max-width: 1024) {
+    .portfolio__container{
+        grid-template-columns:1fr 1fr;
+        gap: 1.2rem;
+    }
+}
+
+/* ================media queries ( small device ) ============================= */
+@media screen and (max-width: 600px) {
+    .portfolio__container{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+/* Large desktops and laptops */
+@media (max-width: 1200px) {
+  .experience__container > div {
+    padding: 2rem;
+    margin: 0 auto;
+  }
+  .experience__content {
+    padding: 1rem;
+  }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1024px) {
+    .portfolio__container{
+        grid-template-columns:1fr 1fr;
+        gap: 1.2rem;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .portfolio__container{
+        grid-template-columns:1fr 1fr;
+        gap: 1.2rem;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .portfolio__container{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    .portfolio__container{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

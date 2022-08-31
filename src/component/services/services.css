@@ -1,0 +1,113 @@
+.services__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.service{
+    background-color: var(--color-bg-variant);
+    border-radius:  0 0 2rem 2rem;
+    border: 1px solid var(--color-primary);
+    height: fit-content;
+    transition: var(--transition);
+}
+
+.service:hover{
+    background: transparent;
+    cursor: pointer;
+    border-color: var(--color-primary-variant);
+}
+
+.service__head{
+   background-color: var(--color-primary);
+   padding: 2rem;
+   border-radius: 0 0 2rem 2rem;
+   box-shadow: 0 2rem 1rem rgba(0, 0, 0, .1);
+
+}
+.service__head h3{
+    color:  var(--color-bg);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.service__list{
+    padding: 2rem;
+}
+
+.service__list li{
+    display: flex;gap:1rem;
+    margin-bottom: 0.8rem;
+}
+.service__list__icon{
+    color: var(--color-primary);
+    margin-top: 2px;
+}
+
+.service__list p{
+    font-size: .9rem;
+}
+
+
+/* ================media queries ( Medium device) ======================= */
+
+@media screen and (max-width: 1024) {
+   .services__container{
+    gap: 2rem;
+   }
+   .service{
+    height: auto;
+   }
+   }
+   
+   /* ================media queries ( small device ) ============================= */
+   @media screen and (max-width: 600px) {
+    .services__container{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+       }
+     }
+  
+       /* Large desktops and laptops */
+  @media (max-width: 1200px) {
+      .experience__container > div {
+        
+          padding: 2rem;
+          margin: 0 auto;
+         
+        }
+        .experience__content{
+          padding: 1rem;
+        }
+  }
+  
+  /* Landscape tablets and medium desktops */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .services__container{
+        gap: 2rem;
+       }
+  }
+  
+  /* Portrait tablets and small desktops */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .services__container{
+        gap: 2rem;
+       }
+  }
+  
+  /* Landscape phones and portrait tablets */
+  @media (max-width: 767px) {
+    .services__container{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+       }
+  }
+  
+  /* Portrait phones and smaller */
+  @media (max-width: 480px) {
+    .services__container{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+       }
+  }
+  
